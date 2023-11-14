@@ -1,14 +1,14 @@
 <div class="wrapper">
   <div class="title-text">
-    <div class="title login">Login Form</div>
-    <div class="title signup">Signup Form</div>
+    <div class="title login">Inicia sesión</div>
+    <div class="title signup">Registrate</div>
   </div>
   <div class="form-container">
     <div class="slide-controls">
       <input type="radio" name="slide" id="login" checked />
       <input type="radio" name="slide" id="signup" />
-      <label for="login" class="slide login">Login</label>
-      <label for="signup" class="slide signup">Signup</label>
+      <label for="login" class="slide login">Inicia sesión</label>
+      <label for="signup" class="slide signup">Registrate</label>
       <div class="slider-tab"></div>
     </div>
     <div class="form-inner">
@@ -19,12 +19,14 @@
         <div class="field">
           <input type="password" placeholder="Password" required />
         </div>
-        <div class="pass-link"><a href="#">Forgot password?</a></div>
+        <div class="pass-link"><a href="#">¿Olvidaste tu contraseña?</a></div>
         <div class="field btn">
           <div class="btn-layer"></div>
-          <input type="submit" value="Login" />
+          <input type="submit" value="Inicia sesión" />
         </div>
-        <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+        <div class="signup-link">
+          ¿No tienes cuenta? <a href="">Signup now</a>
+        </div>
       </form>
       <form action="#" class="signup">
         <div class="field">
@@ -38,7 +40,7 @@
         </div>
         <div class="field btn">
           <div class="btn-layer"></div>
-          <input type="submit" value="Signup" />
+          <input type="submit" value="Registrate" />
         </div>
       </form>
     </div>
@@ -58,14 +60,12 @@
     height: 100%;
     width: 100%;
     place-items: center;
-    background: -webkit-linear-gradient(
-      left,
-      #003366,
-      #004080,
-      #0059b3,
-      #0073e6
-    );
+    background-image: url("/images/loginbanner.jpeg"); /* Path to your image */
+    background-size: cover; /* This ensures that your background covers the entire area */
+    background-position: center; /* This will center your background image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
   }
+
   ::selection {
     background: #1a75ff;
     color: #fff;
@@ -124,10 +124,10 @@
     border-radius: 15px;
     background: -webkit-linear-gradient(
       left,
-      #003366,
-      #004080,
-      #0059b3,
-      #0073e6
+      #202020,
+      #3b3838,
+      #211d1d,
+      #000000
     );
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -221,10 +221,10 @@
     left: -100%;
     background: -webkit-linear-gradient(
       right,
-      #003366,
-      #004080,
-      #0059b3,
-      #0073e6
+      #202020,
+      #3b3838,
+      #211d1d,
+      #000000
     );
     border-radius: 15px;
     transition: all 0.4s ease;
