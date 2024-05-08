@@ -435,4 +435,37 @@
   $(".js-hide-modal16").on("click", function () {
     $(".js-modal16").removeClass("show-modal16");
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Function to show a modal
+    function showModal(modalId) {
+        document.querySelectorAll('.wrap-modal').forEach(modal => {
+            modal.style.display = 'none'; // Hide all modals
+        });
+        document.querySelector(modalId).style.display = 'block'; // Show the specific modal
+    }
+
+    // Event listeners for next buttons
+    document.querySelectorAll('.next-modal').forEach(button => {
+        button.addEventListener('click', function() {
+            const currentModal = this.closest('.wrap-modal');
+            const nextModal = currentModal.nextElementSibling;
+            if (nextModal && nextModal.classList.contains('wrap-modal')) {
+                showModal(`#${nextModal.id}`);
+            }
+        });
+    });
+
+    // Event listeners for previous buttons
+    document.querySelectorAll('.prev-modal').forEach(button => {
+        button.addEventListener('click', function() {
+            const currentModal = this.closest('.wrap-modal');
+            const prevModal = currentModal.previousElementSibling;
+            if (prevModal && prevModal.classList.contains('wrap-modal')) {
+                showModal(`#${prevModal.id}`);
+            }
+        });
+    });
+});
+
 })(jQuery);
