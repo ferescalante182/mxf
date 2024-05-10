@@ -4139,3 +4139,12 @@ input.num-product::-webkit-inner-spin-button {
   padding-left: 100%; /* Ensures it starts offscreen */
   animation: scrollLeft 10s linear infinite; /* Adjust timing as needed */
 }
+
+
+/* Glowing Effect for Buttons */
+.stext-106:hover {
+  color: #824cff; /*  */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow around text */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* White glow around button */
+  transition: all 0.3s ease-in-out; /* Smooth transition for glow effect */
+}
