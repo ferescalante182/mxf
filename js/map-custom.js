@@ -218,20 +218,28 @@
             ];
 
             if (selector_map !== undefined) {
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
                 var map = new google.maps.Map(document.getElementById('google_map'), {
-                    zoom: Number(map_zoom),
-                    zoomControl: false,  
-                    disableDoubleClickZoom: true,
-                    scrollwheel: scrollwhell,
+                    zoom: 15,
+                    zoomControl: true,  // Always enable zoomControl
+                    zoomControlOptions: {
+                        position: google.maps.ControlPosition.LEFT_CENTER // You can adjust the position
+                    },
+                    disableDoubleClickZoom: !isMobile, // Disable double-click zoom on desktop
+                    gestureHandling: 'auto', // Allows automatic enabling of gesture handling on mobile
+                    scrollwheel: !isMobile, // Enable scrollwheel on desktop, disable on mobile
                     navigationControl: true,
                     mapTypeControl: false,
                     scaleControl: false,
-                    draggable: draggable,
+                    draggable: true, // You might want to keep this always true for usability
                     styles: style,
                     center: new google.maps.LatLng(latitude, longitude),
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 });
             }
+            
+            
 
             var infowindow = new google.maps.InfoWindow();
 

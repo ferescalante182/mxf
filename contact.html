@@ -105,9 +105,7 @@
                   <a href="product.html">Tienda</a>
                 </li>
 
-                <li>
-                  <a href="blog.html">Blog</a>
-                </li>
+                 
 
                 <li>
                   <a href="about.html">Nosotres</a>
@@ -174,9 +172,7 @@
             <a href="product.html">Tienda</a>
           </li>
 
-          <li>
-            <a href="blog.html">Blog</a>
-          </li>
+            
 
           <li>
             <a href="about.html">Nosotres</a>
@@ -217,27 +213,29 @@
     <!-- Title page -->
     <section
       class="bg-img1 txt-center p-lr-15 p-tb-92"
-      style="background-image: url('images/bg-01.jpg')"
+      style="background-image: url('images/logosAndMore/bannermxf01.jpeg')"
     >
-      <h2 class="ltext-105 cl0 txt-center">Contact</h2>
     </section>
 
     <!-- Content page -->
     <section class="bg0 p-t-104 p-b-116">
+      <h2 class="ltext-105 cl0 txt-center" style="color:black">Contact</h2>
+
       <div class="container">
+        
         <div class="flex-w flex-tr">
           <div
             class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md"
           >
             <form>
-              <h4 class="mtext-105 cl2 txt-center p-b-30">Send Us A Message</h4>
+              <h4 class="mtext-105 cl2 txt-center p-b-30">Contáctanos</h4>
 
               <div class="bor8 m-b-20 how-pos4-parent">
                 <input
                   class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30"
                   type="text"
                   name="email"
-                  placeholder="Your Email Address"
+                  placeholder="Tu E-mail"
                 />
                 <img
                   class="how-pos4 pointer-none"
@@ -250,18 +248,17 @@
                 <textarea
                   class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25"
                   name="msg"
-                  placeholder="How Can We Help?"
+                  placeholder="¿Cómo te Podemos Ayudar?"
                 ></textarea>
               </div>
 
               <button
                 class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"
               >
-                Submit
+                Enviar
               </button>
             </form>
           </div>
-
           <div
             class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md"
           >
@@ -271,11 +268,10 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2"> Address </span>
+                <span class="mtext-110 cl2"> Dirección </span>
 
                 <p class="stext-115 cl6 size-213 p-t-18">
-                  Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018
-                  US
+                  Callejon Pasaje Rodriguez Local 46, Zona Centro, 22000 Tijuana, B.C. México
                 </p>
               </div>
             </div>
@@ -286,9 +282,9 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2"> Lets Talk </span>
+                <span class="mtext-110 cl2"> Hablemos </span>
 
-                <p class="stext-115 cl1 size-213 p-t-18">+1 800 1236879</p>
+                <p class="stext-115 cl1 size-213 p-t-18">+ 664 305 5610</p>
               </div>
             </div>
 
@@ -298,9 +294,9 @@
               </span>
 
               <div class="size-212 p-t-2">
-                <span class="mtext-110 cl2"> Sale Support </span>
+                <span class="mtext-110 cl2"> Servicio al cliente </span>
 
-                <p class="stext-115 cl1 size-213 p-t-18">contact@example.com</p>
+                <p class="stext-115 cl1 size-213 p-t-18">mxf@gmail.com</p>
               </div>
             </div>
           </div>
@@ -313,8 +309,8 @@
       <div
         class="size-303"
         id="google_map"
-        data-map-x="40.691446"
-        data-map-y="-73.886787"
+        data-map-x="32.53374050691774"
+        data-map-y="-117.03795623015034"
         data-pin="images/icons/pin.png"
         data-scrollwhell="0"
         data-draggable="1"
@@ -501,9 +497,17 @@
       });
     </script>
     <!--===============================================================================================-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHId2icsiv1-nEOWx5Hz_ofkd52rIDLLM"></script>
     <script src="js/map-custom.js"></script>
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyAHId2icsiv1-nEOWx5Hz_ofkd52rIDLLM",
+        v: "weekly",
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
+    </script>
   </body>
 </html>
